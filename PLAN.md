@@ -57,6 +57,8 @@ Total: ~6-9 weeks for one developer.
 3. CPU-only machines can't run large-v3-turbo in real time -> model tiers, auto-select by hardware.
 4. System-audio capture differs per OS -> most likely schedule slip.
 
+## Dev hardware
+Windows 11, Intel i7-1165G7 (4C/8T), 31.7 GB RAM, NVIDIA MX350 (2 GB VRAM). Treat as CPU-only: large-v3-turbo on CPU is unlikely to hit real time, so expect small/medium int8 as the default final-pass tier. Benchmark confirms.
+
 ## Open questions
-- Target hardware (GPU? Apple Silicon?) — determines default model tiers.
 - Is speaker diarization required?
